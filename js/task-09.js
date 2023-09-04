@@ -1,5 +1,5 @@
 const spanText = document.querySelector(".color");
-const bodyEl = document.querySelector(".widget");
+const bodyEl = document.querySelector("body");
 const buttonEl = document.querySelector(".change-color");
 
 bodyEl.addEventListener("click", colorElChange);
