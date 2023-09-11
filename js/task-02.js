@@ -7,19 +7,11 @@ const ingredients = [
   "Condiments",
 ];
 
-const ingredientsList = document.querySelector("#ingredients"); 
-
-let liEl;
-
-const ingredientsItem = ingredients.map((ingredient) => {
-let liEl = document.createElement("li");
-liEl.classList.add("item");
-
- console.log(liEl);
+const ulIngredients = document.getElementById("ingredients");
+ingredients.forEach((ingredient) => {
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add("item");
+  ulIngredients.appendChild(li);
 });
-
-
-ingredientsList.insertAdjacentElement("beforebegin", ingredientsItem);
-
-
 
